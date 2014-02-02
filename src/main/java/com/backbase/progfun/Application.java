@@ -16,11 +16,11 @@ public class Application {
     public static void main(String[] args) throws Throwable {
 
         // port configurations for heroku
-        String port = System.getenv("PORT");
-        if (port != null && !port.isEmpty()) {
-            LOGGER.info("Running on port {}", port);
-            System.setProperty("server.port", port);
-        }
+//        String port = System.getenv("PORT");
+//        if (port != null && !port.isEmpty()) {
+//            LOGGER.info("Running on port {}", port);
+//            System.setProperty("server.port", port);
+//        }
 
 
         SpringApplication.run(Application.class, args);
